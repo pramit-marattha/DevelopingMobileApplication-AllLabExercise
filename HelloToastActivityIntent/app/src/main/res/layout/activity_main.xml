@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/simple"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button_show_second_activity"
+        android:layout_width="392dp"
+        android:layout_height="68dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="340dp"
+        android:background="#03A9F4"
+        android:onClick="showSecondActivity"
+        android:paddingStart="0dp"
+        android:paddingEnd="0dp"
+        android:text="@string/second_activity"
+        android:textColor="@android:color/white"
+        android:textSize="27sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_count"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button_count"
+        android:layout_width="387dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="12dp"
+        android:background="#03A9F4"
+        android:onClick="countUp"
+        android:text="@string/button_label_count"
+        android:textColor="@android:color/white"
+        android:textSize="27sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_count_reset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_count_reset"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="133dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginBottom="16dp"
+        android:background="#E91E63"
+        android:onClick="countReset"
+        android:text="@string/button_count_reset"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/show_count"
+        android:layout_width="373dp"
+        android:layout_height="214dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="8dp"
+        android:background="#FF9800"
+        android:text="@string/count_initial_value"
+        android:textAlignment="center"
+        android:textColor="#2196F3"
+        android:textSize="178sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/simple"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/simpleText"
+        android:layout_width="252dp"
+        android:layout_height="240dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/second_activity_text"
+        android:textColor="@color/colorAccent"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/show_count"
+        android:layout_width="253dp"
+        android:layout_height="226dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="8dp"
+        android:background="#00FF9800"
+        android:text="@string/count_initial_value"
+        android:textAlignment="center"
+        android:textColor="#2196F3"
+        android:textSize="178sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_count"
+        android:layout_width="434dp"
+        android:layout_height="63dp"
+        android:layout_marginHorizontal="1dp"
+        android:background="#03A9F4"
+        android:onClick="countUp"
+        android:text="@string/button_label_count"
+        android:textColor="@android:color/white"
+        android:textSize="27sp"
+        tools:layout_editor_absoluteX="-14dp" />
+
+    <Button
+        android:id="@+id/abort"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="217dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="140dp"
+        android:background="#03A9F4"
+        android:onClick="Abort"
+        android:text="@string/close_second_activity"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/simpleText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

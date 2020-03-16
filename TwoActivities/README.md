@@ -1,0 +1,4 @@
+![Activity&Intents](ActivityIntents.gif)
+![](1.png)
+![](2.png)
+![](3.png)

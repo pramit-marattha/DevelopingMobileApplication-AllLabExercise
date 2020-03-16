@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">onSaveInstanceState</string>
+    <string name="countplus">Count</string>
+</resources>

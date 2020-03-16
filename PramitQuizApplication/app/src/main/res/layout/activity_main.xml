@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/eainbo"
+    android:padding="16dp"
+    tools:context="np.com.pramitmarattha.MainActivity">
+    <TextView
+        android:id="@+id/Text_vieww"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:fontFamily="monospace"
+        android:text="Rapid Quiz"
+        android:textAllCaps="false"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/text_view_highscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="39dp"
+        android:text="Total Points Earned: 0"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/button_start_quiz"
+        android:layout_width="222dp"
+        android:layout_height="79dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="410dp"
+        android:background="#8BC34A"
+        android:fontFamily="cursive"
+        android:text="Let's get started!!->>>"
+        android:textAlignment="center"
+        android:textColor="#24252C"
+        android:textStyle="bold" />
+    <Spinner
+        android:id="@+id/spinner_category"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner_difficulty"
+        android:layout_alignStart="@+id/button_start_quiz"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/grey"
+        tools:visibility="visible" />
+    <Spinner
+        android:id="@+id/spinner_difficulty"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Text_vieww"
+        android:layout_alignStart="@+id/button_start_quiz"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/grey" />
+</RelativeLayout>

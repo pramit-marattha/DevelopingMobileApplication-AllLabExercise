@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">HelloToastActivityIntent</string>
+    <string name="button_label_count">Count++</string>
+    <string name="button_count_reset">Reset</string>
+    <string name="toast_message">Hello, Pramit!</string>
+    <string name="count_initial_value">0</string>
+    <string name="second_activity">Say Hello</string>
+    <string name="second_activity_text">Helloo There this is next activity! "0"</string>
+    <string name="close_second_activity">Back to First Activity</string>
+    <string name="no_response">The second activity sent no response!</string>
+
+</resources>

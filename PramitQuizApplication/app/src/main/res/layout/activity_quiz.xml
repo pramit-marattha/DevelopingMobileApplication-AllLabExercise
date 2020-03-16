@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/back"
+    tools:context="np.com.pramitmarattha.QuizActivity">
+
+    <TextView
+        android:id="@+id/text_view_score"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="285dp"
+        android:freezesText="true"
+        android:text="Score: 0"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/text_view_question_count"
+        android:layout_width="157dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_score"
+        android:layout_marginTop="-1dp"
+        android:freezesText="true"
+        android:text="Question: 1/x"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/text_view_difficulty"
+        android:layout_width="281dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_question_count"
+        android:layout_marginTop="4dp"
+        android:freezesText="true"
+        android:text="Difficulty: "
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/text_view_category"
+        android:layout_width="323dp"
+        android:layout_height="46dp"
+        android:layout_below="@id/text_view_difficulty"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-1dp"
+        android:freezesText="true"
+        android:text="Category: "
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/text_view_countdown"
+        android:layout_width="239dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="430dp"
+        android:layout_marginEnd="60dp"
+        android:text="00:10"
+        android:textColor="@android:color/black"
+        android:textSize="90sp" />
+
+    <TextView
+        android:id="@+id/text_view_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/radio_group"
+        android:layout_marginBottom="16dp"
+        android:freezesText="true"
+        android:text="Here will be the question text"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <RadioButton
+            android:id="@+id/radio_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 1"
+            android:freezesText="true"/>
+
+        <RadioButton
+            android:id="@+id/radio_button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 2"
+            android:freezesText="true"/>
+
+        <RadioButton
+            android:id="@+id/radio_button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 3"
+            android:freezesText="true"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_confirm_next"
+        android:layout_width="381dp"
+        android:layout_height="58dp"
+        android:layout_below="@id/radio_group"
+        android:layout_marginTop="20dp"
+        android:freezesText="true"
+        android:text="Lock It UP " />
+
+</RelativeLayout>
