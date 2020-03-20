@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" tools:context=".ScoreActivity" android:background="@drawable/confeti">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/score_display_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/circle"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="100sp" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:layout_marginTop="24dp" android:layout_marginBottom="24dp" android:text="@string/ScoreStr" android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/colorresin" android:textSize="39dp"/>
+
+        <Button
+            android:id="@+id/back_to_beginning"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="@color/colorEGMO"
+            android:text="Let's start again" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

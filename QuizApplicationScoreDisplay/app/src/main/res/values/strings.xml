@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">QuizApplicationScoreDisplay</string>
+    <string name="ScoreStr">Congrats !!!!</string>
+</resources>

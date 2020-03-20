@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" tools:context=".QuizActivity" android:background="@drawable/back">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+
+        <TextView style="@style/AppTheme" android:text="1. How are keyword arguments specified in the function heading in python?" />
+
+        <RadioGroup
+            android:id="@+id/group_one_Radio"
+            android:layout_width="wrap_content"
+            android:layout_height="183dp">
+
+            <RadioButton
+                android:id="@+id/validIdentifierradiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="one star followed by a valid identifier" />
+
+            <RadioButton
+                android:id="@+id/underscoreradiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="one underscore followed by a valid identifier" />
+
+            <RadioButton
+                android:id="@+id/two_stars_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="two stars followed by a valid identifier" />
+
+            <RadioButton
+                android:id="@+id/two_underscore_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="two underscores followed by a valid identifier" />
+        </RadioGroup>
+
+
+        <TextView style="@style/AppTheme" android:text="2. How many keyword arguments can be passed to a function in a single function call?" />
+
+        <RadioGroup
+            android:id="@+id/group_two_Radio"
+            android:layout_width="156dp"
+            android:layout_height="183dp">
+
+            <RadioButton
+                android:id="@+id/zero_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="zero" />
+
+            <RadioButton
+                android:id="@+id/one_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="one" />
+
+            <RadioButton
+                android:id="@+id/zero_or_more_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="zero or more" />
+
+            <RadioButton
+                android:id="@+id/one_or_more_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="one or more" />
+        </RadioGroup>
+
+
+        <TextView style="@style/AppTheme" android:text="3. Which module in the python standard library parses options received from the command line?" />
+
+        <RadioGroup
+            android:id="@+id/group_three_Radio"
+            android:layout_width="117dp"
+            android:layout_height="169dp">
+
+            <RadioButton
+                android:id="@+id/os_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OS" />
+
+            <RadioButton
+                android:id="@+id/getargs_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="getargs" />
+
+            <RadioButton
+                android:id="@+id/mains_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="main" />
+
+            <RadioButton
+                android:id="@+id/getopt_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="getopt" />
+        </RadioGroup>
+
+        <TextView style="@style/AppTheme" android:text="4. What is the type of sys.argv?" />
+
+        <RadioGroup
+            android:id="@+id/group_four_Radio"
+            android:layout_width="110dp"
+            android:layout_height="183dp">
+
+            <RadioButton
+                android:id="@+id/set_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set" />
+
+            <RadioButton
+                android:id="@+id/list_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="List" />
+
+            <RadioButton
+                android:id="@+id/tuple_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="tuple" />
+
+            <RadioButton
+                android:id="@+id/string_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="String" />
+        </RadioGroup>
+
+        <TextView style="@style/AppTheme" android:text="5. On assigning a value to a variable inside a function, it automatically becomes a global variable. State whether true or false." />
+
+        <RadioGroup
+            android:id="@+id/group_five_Radio"
+            android:layout_width="141dp"
+            android:layout_height="205dp">
+
+            <RadioButton
+                android:id="@+id/true_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="True" />
+
+            <RadioButton
+                android:id="@+id/false_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="False" />
+
+            <RadioButton
+                android:id="@+id/error_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Error" />
+
+            <RadioButton
+                android:id="@+id/idk_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I dont Know.." />
+        </RadioGroup>
+
+        <TextView style="@style/AppTheme" android:text="6. What happens if a local variable exists with the same name as the global variable you want to access?" />
+        <CheckBox android:id="@+id/error_var_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Error" />
+        <CheckBox android:id="@+id/undefined_variable_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Undefined" />
+        <CheckBox android:id="@+id/local_var_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Local Variable" />
+
+        <CheckBox
+            android:id="@+id/global_shadow_checkbox"
+            android:layout_width="245dp"
+            android:layout_height="47dp"
+            android:text="The global variable is shadowed" />
+
+
+        <TextView style="@style/AppTheme" android:text="7.  Which of these is false about recursion?" />
+
+        <RadioGroup
+            android:id="@+id/group_six_Radio"
+            android:layout_width="match_parent"
+            android:layout_height="218dp">
+
+            <RadioButton
+                android:id="@+id/recursive_non_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recursive function can be replaced by a non-recursive function" />
+
+            <RadioButton
+                android:id="@+id/non_recur_func_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recursive functions usually take more memory space than non-recursive function" />
+
+            <RadioButton
+                android:id="@+id/recursive_fast_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recursive functions run faster than non-recursive function" />
+
+            <RadioButton
+                android:id="@+id/recursive_easy_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recursion makes programs easier to understand" />
+        </RadioGroup>
+
+        <TextView style="@style/AppTheme" android:text="8. In a Python program, a control structure:" />
+
+        <RadioGroup
+            android:id="@+id/group_seven_Radio"
+            android:layout_width="match_parent"
+            android:layout_height="211dp">
+
+            <RadioButton
+                android:id="@+id/Dictates_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dictates what happens before the program starts and after it terminates" />
+
+            <RadioButton
+                android:id="@+id/program_specific_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Defines program-specific data structures" />
+
+            <RadioButton
+                android:id="@+id/direct_execution_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Directs the order of execution of the statements in the program" />
+
+            <RadioButton
+                android:id="@+id/recursive_understand_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Manages the input and output of control characters" />
+        </RadioGroup>
+
+
+        <TextView style="@style/AppTheme" android:text="9.  Which operator has higher precedence in the following list" />
+
+        <RadioGroup
+            android:id="@+id/group_eight_Radio"
+            android:layout_width="141dp"
+            android:layout_height="203dp">
+
+            <RadioButton
+                android:id="@+id/modulus_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="% Modulus" />
+
+            <RadioButton
+                android:id="@+id/bitwise_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BitWise AND" />
+
+            <RadioButton
+                android:id="@+id/exponent_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="**, Exponent" />
+
+            <RadioButton
+                android:id="@+id/comparision_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="> Comparison" />
+        </RadioGroup>
+
+
+        <TextView style="@style/AppTheme" android:text="10. Which of the following expressions is an example of type conversion?" />
+
+        <RadioGroup
+            android:id="@+id/group_nine_Radio"
+            android:layout_width="103dp"
+            android:layout_height="134dp">
+
+            <RadioButton
+                android:id="@+id/int_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4 + int(3)" />
+
+            <RadioButton
+                android:id="@+id/floatInt_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 5.3 + 6.3" />
+
+            <RadioButton
+                android:id="@+id/intFloat_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5 +4" />
+
+            <RadioButton
+                android:id="@+id/Classicint_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6.0 +5" />
+        </RadioGroup>
+
+        <Button android:id="@+id/submit_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:backgroundTint="@color/colorEGMO" android:text="Submit" />
+    </LinearLayout>
+</ScrollView>
